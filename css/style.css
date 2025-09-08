@@ -1,0 +1,215 @@
+:root {
+	/* Color Palette: Event Horizon */
+	--color-space-deep: #101820;
+	--color-black-rich: #1a1a1a;
+	--color-black-light: #2c2c2c;
+
+	/* Color Palette: Stellar Vortex */
+	--color-accent-gold: #f1c40f;
+	--color-accent-gold-glow: #ffdf60;
+
+	/* Color Palette: Nebula Dreams */
+	--color-accent-red: #e74c3c;
+
+	--font-heading: 'Exo', sans-serif;
+	--font-body: 'Lato', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--color-space-deep);
+	color: rgba(255, 255, 255, 0.85);
+	font-family: var(--font-body);
+	overflow-x: hidden;
+}
+
+#canvas-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1;
+}
+
+.fixed-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	padding: 1rem 2rem;
+	backdrop-filter: blur(10px);
+	background-color: rgba(255, 255, 255, 0.02); /* Kept transparent white */
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Kept transparent white */
+	transition: padding 0.3s ease;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	transition: justify-content 0.3s ease;
+}
+
+.nav-link {
+	font-family: var(--font-heading);
+	color: white;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	border-radius: 20px;
+	transition: all 0.3s ease;
+	font-size: 0.9rem;
+}
+
+.nav-link:hover {
+	background-color: var(
+		--color-black-light
+	); /* Changed from purple to light black */
+	color: var(--color-accent-gold);
+}
+
+main {
+	position: relative;
+	z-index: 10;
+}
+
+.scroll-section {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 6rem 1rem;
+	transition: padding 0.3s ease;
+}
+
+#random-text {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: clamp(1.5rem, 6vw, 3.5rem);
+	color: var(--color-accent-gold);
+	text-shadow: 0 0 15px var(--color-accent-gold);
+	overflow-wrap: break-word;
+	text-align: center;
+}
+
+.content-card {
+	max-width: 800px;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.04); /* Kept transparent white */
+	backdrop-filter: blur(5px);
+	padding: 2rem;
+	border-radius: 15px;
+	border: 1px solid rgba(255, 255, 255, 0.2); /* Kept transparent white */
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+	transition: padding 0.3s ease;
+	margin: 5vh;
+}
+
+h1 {
+	font-family: var(--font-heading);
+	font-size: clamp(2rem, 8vw, 4rem);
+	color: white;
+	text-shadow: 0 0 60px black, 0 0 20px var(--color-accent-gold),
+		0 0 40px var(--color-accent-gold);
+	line-height: 1.1;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.home-section {
+	text-align: center;
+}
+
+h2 {
+	font-family: var(--font-heading);
+	font-size: clamp(1.8rem, 5vw, 2.5rem);
+	color: white;
+	margin-bottom: 1.5rem;
+	padding-bottom: 0.5rem;
+	border-bottom: 2px solid var(--color-accent-gold);
+	display: inline-block;
+}
+
+h3 {
+	font-family: var(--font-heading);
+	color: var(--color-accent-gold);
+	margin-top: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+
+p,
+li {
+	font-size: 1rem;
+	line-height: 1.7;
+	font-weight: 300;
+	color: rgba(255, 255, 255, 0.8);
+	margin-bottom: 1rem;
+	text-align: justify;
+}
+
+strong {
+	font-weight: 700;
+	color: white;
+}
+
+blockquote {
+	border-left: 3px solid var(--color-accent-gold); /* Changed from violet to gold */
+	padding-left: 1.5rem;
+	margin: 2rem 0;
+	font-style: italic;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 2rem;
+}
+
+th,
+td {
+	padding: 0.75rem 1rem;
+	text-align: left;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+th {
+	font-family: var(--font-heading);
+	background-color: var(
+		--color-black-light
+	); /* Changed from indigo to light black */
+}
+
+/* --- ADDED FOR RESPONSIVENESS --- */
+@media (max-width: 768px) {
+	.fixed-nav {
+		padding: 1rem;
+	}
+
+	.nav-links {
+		justify-content: space-around;
+		gap: 0.5rem;
+	}
+
+	.nav-link {
+		padding: 0.5rem;
+		font-size: 0.8rem;
+	}
+
+	.scroll-section {
+		padding: 4rem 1rem;
+	}
+
+	.content-card {
+		padding: 1.5rem;
+	}
+}

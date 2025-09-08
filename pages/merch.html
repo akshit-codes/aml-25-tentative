@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amalthea 2025: Merch</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/merch.css" />
+    <link rel="stylesheet" href="../css/modal.css" />
+</head>
+
+<body>
+
+    <div id="canvas-container"></div>
+
+    <header class="fixed-nav">
+        <nav class="nav-links">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="merch.html" class="nav-link">Merch</a>
+            <a href="team.html" class="nav-link">Team</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="merch" class="scroll-section">
+            <div class="content-card merch-showcase">
+                <h2>Amalthea 2025 T-Shirts</h2>
+
+                <div class="merch-items-container">
+                    <div class="merch-item">
+                        <img src="../images/ethereal.png" alt="Amalthea Ethereal T-Shirt" />
+                        <h3>ETHEREAL</h3>
+                        <p>Where a clean angel design meets the digital age. A fusion of ancient mythology and modern
+                            technology, creating a minimalist masterpiece with a touch of the divine.</p>
+                        <button class="buy-now-btn" data-item="Ethereal T-shirt">Buy Now</button>
+                    </div>
+
+                    <div class="merch-item">
+                        <img src="../images/horizon.png" alt="Amalthea Horizon T-Shirt" />
+                        <h3>HORIZON</h3>
+                        <p>Black hole vibes with code aesthetics. For those who find beauty in the void and poetry in
+                            algorithms. A tribute to the cosmos and the digital world.</p>
+                        <button class="buy-now-btn" data-item="Horizon T-shirt">Buy Now</button>
+                    </div>
+
+                    <div class="merch-item">
+                        <img src="../images/aurora.png" alt="Amalthea Aurora T-Shirt" />
+                        <h3>AURORA</h3>
+                        <p>Cosmic colors for the bold. Let your personality shine as bright as the northern lights. Our
+                            Aurora tee captures the vibrant, flowing essence of the cosmos.</p>
+                        <button class="buy-now-btn" data-item="Aurora T-shirt">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="soldOutModal" class="modal">
+        <div class="modal-content">
+            <h3>Sold Out!</h3>
+            <p id="modalMessage">Sorry, this item is currently unavailable. Please check back later!</p>
+            <button id="closeModalBtn">OK</button>
+        </div>
+    </div>
+
+    <script src="../js/three-scene.js"></script>
+    <script src="../js/scroll-animations.js"></script>
+    <script src="../js/text-animation.js"></script>
+    <script src="../js/stars.js"></script>
+    <script src="../js/modal.js"></script>
+
+</body>
+
+</html>
