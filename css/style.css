@@ -10,6 +10,8 @@
 
 	/* Color Palette: Nebula Dreams */
 	--color-accent-red: #e74c3c;
+	--color-accent-blue: #3498db;
+	--color-accent-blue-glow: #5dade2;
 
 	--font-heading: 'Exo', sans-serif;
 	--font-body: 'Lato', sans-serif;
@@ -52,6 +54,7 @@ body {
 	background-color: rgba(255, 255, 255, 0.02); /* Kept transparent white */
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Kept transparent white */
 	transition: padding 0.3s ease;
+	height: 65px;
 }
 
 .nav-links {
@@ -211,5 +214,78 @@ th {
 
 	.content-card {
 		padding: 1.5rem;
+	}
+}
+
+.nav-logo img {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translate(40%, -50%);
+	height: 50px;
+}
+
+.hamburger {
+	display: none;
+	cursor: pointer;
+}
+
+.hamburger span {
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	background-color: white;
+	transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 900px) {
+	.nav-links {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background-color: rgba(16, 24, 32, 0.8);
+		backdrop-filter: blur(10px);
+		border-bottom: 1px solid var(--color-accent-blue);
+		box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2);
+		flex-direction: column;
+		align-items: center;
+		gap: 0;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.5s ease-in-out, border-color 0.5s ease;
+	}
+
+	.nav-links.open {
+		max-height: 500px; /* Or a height large enough to show all links */
+		padding: 1rem 0;
+	}
+
+	.nav-link {
+		width: 100%;
+		text-align: center;
+		padding: 1rem;
+		border-radius: 0;
+		border-bottom: 1px solid rgba(52, 152, 219, 0.2);
+		color: var(--color-accent-blue-glow);
+	}
+
+	.nav-link:hover {
+		background-color: rgba(52, 152, 219, 0.1);
+		color: white;
+	}
+
+	.nav-link:last-child {
+		border-bottom: none;
+	}
+
+	.hamburger {
+		display: block;
+		position: absolute;
+		right: 2rem;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 101;
 	}
 }
