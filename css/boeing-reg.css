@@ -1,0 +1,311 @@
+:root {
+	--color-space-deep: #101820;
+	--color-black-rich: #1a1a1a;
+	--color-accent-gold: #f1c40f;
+	--font-heading: 'Exo', sans-serif;
+	--font-body: 'Lato', sans-serif;
+}
+
+body {
+	background-color: var(--color-space-deep);
+	color: rgba(255, 255, 255, 0.85);
+	font-family: var(--font-body);
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.content-card {
+	max-width: 1200px;
+	text-align: center;
+}
+
+.content-card h2 {
+	font-family: var(--font-heading);
+	font-size: clamp(2rem, 5vw, 3rem);
+	color: var(--color-accent-gold);
+	margin-top: 1rem;
+	text-shadow: 0 0 10px var(--color-accent-gold);
+}
+
+.merch-showcase {
+	text-align: center;
+}
+
+#teamForm {
+	border-radius: 16px;
+	padding: 30px;
+	width: 100%;
+	margin: 0 auto;
+	color: #eee;
+}
+
+#teamForm h3,
+#teamForm h4 {
+	font-family: var(--font-heading);
+	color: var(--color-accent-gold);
+	text-shadow: 0 0 10px var(--color-accent-gold);
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+#teamForm h3 {
+	font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+#teamForm h4 {
+	font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+#teamForm .form-group {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.75rem;
+	width: 100%;
+}
+
+#teamForm .form-group label {
+	flex: 0 0 10%;
+	text-align: right;
+	margin-right: 25px;
+	font-weight: 600;
+}
+
+#teamForm input[type='text'],
+#teamForm input[type='file'],
+#teamForm select {
+	flex: 1;
+	max-width: 400px;
+	min-width: 150px;
+	padding: 5px 14px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 8px;
+	background: rgba(255, 255, 255, 0.05);
+	color: #fff;
+	font-size: 1rem;
+	transition: all 0.3s ease;
+	text-align: left;
+	display: block;
+}
+
+#teamForm select {
+	flex: 1;
+	max-width: 400px;
+	min-width: 150px;
+	padding: 6px 14px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 8px;
+	background: rgba(255, 255, 255, 0.05);
+	color: #fff;
+	font-size: 1rem;
+	cursor: pointer;
+	appearance: none;
+	outline: none;
+	transition: all 0.3s ease;
+	background-image: url("data:image/svg+xml;utf8,<svg fill='%23f1c40f' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+	background-repeat: no-repeat;
+	background-position: right 10px center;
+	background-size: 16px 16px;
+	padding-right: 2rem;
+}
+
+#teamForm select:hover {
+	border-color: var(--color-accent-gold);
+	box-shadow: 0 0 10px var(--color-accent-gold);
+}
+
+#teamForm select option {
+	background: #101820;
+	color: #fff;
+	padding: 10px;
+	font-size: 1rem;
+}
+
+#teamForm select option:hover,
+#teamForm select option:checked {
+	background: var(--color-accent-gold);
+	color: #111;
+}
+
+#teamForm input[type='text']:focus,
+#teamForm input[type='file']:focus {
+	border-color: #ffcc00;
+	box-shadow: 0 0 10px #ffcc00;
+	outline: none;
+}
+
+#teamForm input[type='file'] {
+	display: block;
+}
+
+#teamForm input[type='file']::-webkit-file-upload-button {
+	background: #222;
+	border: 1px solid #ffcc00;
+	color: #ffcc00;
+	padding: 6px 12px;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#teamForm input[type='file']::-webkit-file-upload-button:hover {
+	background: #ffcc00;
+	color: #111;
+	box-shadow: 0 0 8px #ffcc00;
+}
+
+#teamForm input[type='radio'],
+#teamForm input[type='checkbox'] {
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #ffcc00;
+	margin-right: 8px;
+	cursor: pointer;
+	transition: 0.3s;
+	display: inline-block;
+	flex-shrink: 0;
+}
+
+#teamForm input[type='radio'] {
+	border-radius: 50%;
+}
+
+#teamForm input[type='radio']:checked {
+	background: #ffcc00;
+	box-shadow: 0 0 6px #ffcc00;
+}
+
+#teamForm input[type='checkbox'] {
+	border-radius: 4px;
+}
+
+#teamForm input[type='checkbox']:checked {
+	background: #ffcc00;
+	box-shadow: 0 0 6px #ffcc00;
+}
+
+#teamForm .form-group.checkbox {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	gap: 12px;
+	width: 100%;
+}
+
+#teamForm .form-group.checkbox label {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin: 0;
+	cursor: pointer;
+	flex: 1 1 100%;
+	text-align: left;
+}
+
+#teamForm .options label {
+	display: inline-flex;
+	align-items: center;
+	cursor: pointer;
+	gap: 8px;
+}
+
+#teamForm button[type='submit'] {
+	margin-top: 2rem;
+	background-color: var(--color-black-rich);
+	color: var(--color-accent-gold);
+	border: none;
+	padding: 0.75rem 1.25rem;
+	font-family: var(--font-heading);
+	font-size: 1rem;
+	border-radius: 25px;
+	cursor: pointer;
+	box-shadow: 0 0 10px var(--color-accent-gold);
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#teamForm button[type='submit']:hover {
+	background-color: var(--color-accent-gold);
+	color: var(--color-black-rich);
+	box-shadow: 0 0 20px var(--color-accent-gold);
+}
+
+.file-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: 5px;
+	width: 100%;
+}
+
+.file-wrapper input[type='file'] {
+	flex: 1;
+	width: 100%;
+	max-width: 400px;
+	min-width: 200px;
+}
+
+.file-wrapper .file-hint {
+	margin-top: 4px;
+	font-size: 0.85rem;
+	color: rgba(255, 255, 255, 0.7);
+	font-style: italic;
+}
+
+@media (max-width: 768px) {
+	.merch-items-container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.merch-item {
+		max-width: 90%;
+		margin-bottom: 2rem;
+	}
+
+	/* stack normal fields */
+	#teamForm .form-group {
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+	}
+
+	#teamForm .form-group label {
+		flex: none;
+		text-align: left;
+		margin: 0 0 6px 0;
+		width: 100%;
+	}
+
+	#teamForm .form-group input,
+	#teamForm .form-group select {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	/* checkboxes & radios stay inline with text */
+	#teamForm .form-group.checkbox {
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+		gap: 8px;
+	}
+
+	#teamForm .form-group.checkbox label,
+	#teamForm .options label {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		width: 100%;
+		white-space: normal; /* allow wrapping */
+		word-break: break-word; /* prevent overflow */
+	}
+
+	#teamForm input[type='checkbox'],
+	#teamForm input[type='radio'] {
+		width: 20px !important;
+		height: 20px !important;
+		flex-shrink: 0;
+		margin: 0;
+	}
+}
