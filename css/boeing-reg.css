@@ -28,10 +28,6 @@ body {
 	text-shadow: 0 0 10px var(--color-accent-gold);
 }
 
-.merch-showcase {
-	text-align: center;
-}
-
 #teamForm {
 	border-radius: 16px;
 	padding: 30px;
