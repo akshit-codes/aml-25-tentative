@@ -19,33 +19,19 @@
 	<link rel="stylesheet" href="../css/style.css" />
 	<link rel="stylesheet" href="../css/boeing-event.css" />
 
-	<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
-	<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
-	<link rel="shortcut icon" href="/images/favicon.ico" />
-	<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" href="../images/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="../images/favicon.svg" />
+	<link rel="shortcut icon" href="../images/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png" />
 	<meta name="apple-mobile-web-app-title" content="MyWebSite" />
-	<link rel="manifest" href="/images/site.webmanifest" />
+	<link rel="manifest" href="../images/site.webmanifest" />
 </head>
 
 <body>
 
 	<div id="canvas-container"></div>
 
-	<header class="fixed-nav">
-		<a href="../index.html" class="nav-logo"><img src="../images/aml_logo.png" alt="Amalthea Logo"
-				class="aml-logo-img" /></a>
-		<div class="hamburger" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<nav class="nav-links" id="navLinks">
-			<a href="../index.html" class="nav-link">Home</a>
-			<a href="merch.html" class="nav-link">Merch</a>
-			<a href="team.html" class="nav-link">Team</a>
-			<a href="boeing-event.html" class="nav-link">Boeing Aeromodelling</a>
-		</nav>
-	</header>
+	<div id="nav-placeholder"></div>
 
 	<main>
 		<section id="merch" class="scroll-section">
@@ -84,7 +70,7 @@
 	<script src="../js/stars.js"></script>
 	<script src="../js/modal.js"></script>
 	<script src="../js/boeing-event.js"></script>
-	<script src="../js/nav.js"></script>
+	<script src="../js/nav-loader.js" defer></script>
 
 </body>
 
