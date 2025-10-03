@@ -102,25 +102,25 @@ function getTeamSize() {
 }
 
 function validateFiles(formData) {
-	const abstract = formData.get('abstract');
-	if (
-		!abstract ||
-		abstract.type !== 'application/pdf' ||
-		abstract.size > 15 * 1024 * 1024
-	) {
-		alert('Abstract must be a PDF under 15 MB.');
-		return false;
-	}
+	// const abstract = formData.get('abstract');
+	// if (
+	// 	!abstract ||
+	// 	abstract.type !== 'application/pdf' ||
+	// 	abstract.size > 15 * 1024 * 1024
+	// ) {
+	// 	alert('Abstract must be a PDF under 15 MB.');
+	// 	return false;
+	// }
 
-	const photos = formData.get('photos');
-	if (
-		!photos ||
-		photos.name.split('.').pop().toLowerCase() !== 'zip' ||
-		photos.size > 50 * 1024 * 1024
-	) {
-		alert('Photos must be a ZIP file under 50 MB.');
-		return false;
-	}
+	// const photos = formData.get('photos');
+	// if (
+	// 	!photos ||
+	// 	photos.name.split('.').pop().toLowerCase() !== 'zip' ||
+	// 	photos.size > 50 * 1024 * 1024
+	// ) {q
+	// 	alert('Photos must be a ZIP file under 50 MB.');
+	// 	return false;
+	// }
 
 	const teamSize = getTeamSize();
 	for (let i = 1; i <= teamSize; i++) {
