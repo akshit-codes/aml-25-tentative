@@ -28,7 +28,7 @@ body {
 	font-size: clamp(2rem, 5vw, 3rem);
 	color: var(--color-accent-gold);
 	margin-bottom: 2rem;
-	text-shadow: 0 0 10px var(--color-accent-gold);
+	text-shadow: 0 0 2px var(--color-accent-gold);
 }
 
 .merch-items-container {

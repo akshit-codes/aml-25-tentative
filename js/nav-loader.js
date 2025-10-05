@@ -29,6 +29,9 @@ if (!navPlaceholder) {
     <header class="fixed-nav">
 		<a href="${basePath}/index.html" class="nav-logo"><img src="${basePath}/images/aml_logo.png" alt="Amalthea Logo"
 				class="aml-logo-img" /></a>
+        <a href="https://iitgn.ac.in" class="iitgn-logo">
+            <img src="${basePath}/images/iitgn_logo.png" alt="IITGN Logo" class="iitgn-logo-img" />
+        </a>
 		<div class="hamburger" id="hamburger-menu">
 			<span></span>
 			<span></span>

@@ -225,6 +225,14 @@ th {
 	height: 50px;
 }
 
+.iitgn-logo img {
+    height: 45px;
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    transform: translate(40%, -50%);
+}
+
 .hamburger {
 	display: none;
 	cursor: pointer;
