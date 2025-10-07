@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		{
 			name: 'Ankit Saha',
 			role: 'Events Coordinator',
-			image: 'people/Ankit.png',
+			image: 'people/Ankit.jpeg',
 		},
 		{
 			name: 'Dhanraj Vispara',
