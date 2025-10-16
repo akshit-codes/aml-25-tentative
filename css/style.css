@@ -103,6 +103,7 @@ main {
 	text-shadow: 0 0 15px var(--color-accent-gold);
 	overflow-wrap: break-word;
 	text-align: center;
+	margin: 0.5rem;
 }
 
 .content-card {

@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		{
 			name: 'Ankit Saha',
 			role: 'Events Coordinator',
-			image: 'people/Ankit.jpeg',
+			image: 'people/Ankit.png',
 		},
 		{
 			name: 'Dhanraj Vispara',
@@ -54,9 +54,9 @@ document.addEventListener('DOMContentLoaded', () => {
 			image: 'people/Dhvani.png',
 		},
 		{
-			name: 'DASKR Manognaya',
+			name: 'DASKR Manognya',
 			role: 'Design Coordinator',
-			image: 'people/Manognaya.png',
+			image: 'people/Manognya.png',
 		},
 		{
 			name: 'Nidhi Ramteke',
