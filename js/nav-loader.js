@@ -17,6 +17,10 @@ if (!navPlaceholder) {
 			href: `${basePath}/pages/boeing-event.html`,
 			text: 'Boeing Aeromodelling',
 		},
+        {
+            href: `${basePath}/pages/auto-expo.html`,
+            text: 'Auto Expo',
+        }
 	];
 
 	const navLinksHTML = navLinksArray

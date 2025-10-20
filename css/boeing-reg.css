@@ -67,6 +67,8 @@ body {
 	font-weight: 600;
 }
 
+#teamForm input[type='email'],
+#teamForm input[type='tel'],
 #teamForm input[type='text'],
 #teamForm input[type='file'],
 #teamForm select {
@@ -124,6 +126,8 @@ body {
 }
 
 #teamForm input[type='text']:focus,
+#teamForm input[type='email']:focus,
+#teamForm input[type='tel']:focus,
 #teamForm input[type='file']:focus {
 	border-color: #ffcc00;
 	box-shadow: 0 0 10px #ffcc00;
