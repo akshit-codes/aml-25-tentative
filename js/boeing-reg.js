@@ -1,4 +1,3 @@
-// Modal feedback logic
 function showFeedbackModal(message, title = 'Notice') {
 	const modal = document.getElementById('feedbackModal');
 	const msg = document.getElementById('modalMessage');
@@ -6,8 +5,6 @@ function showFeedbackModal(message, title = 'Notice') {
 	if (!modal) return;
 	if (msg) msg.textContent = message;
 	if (modalTitle) modalTitle.textContent = title;
-
-	// Ensure animation triggers every time
 	modal.classList.remove('show');
 	void modal.offsetWidth; // force reflow
 	modal.classList.add('show');
@@ -102,26 +99,6 @@ function getTeamSize() {
 }
 
 function validateFiles(formData) {
-	// const abstract = formData.get('abstract');
-	// if (
-	// 	!abstract ||
-	// 	abstract.type !== 'application/pdf' ||
-	// 	abstract.size > 15 * 1024 * 1024
-	// ) {
-	// 	alert('Abstract must be a PDF under 15 MB.');
-	// 	return false;
-	// }
-
-	// const photos = formData.get('photos');
-	// if (
-	// 	!photos ||
-	// 	photos.name.split('.').pop().toLowerCase() !== 'zip' ||
-	// 	photos.size > 50 * 1024 * 1024
-	// ) {q
-	// 	alert('Photos must be a ZIP file under 50 MB.');
-	// 	return false;
-	// }
-
 	const teamSize = getTeamSize();
 	for (let i = 1; i <= teamSize; i++) {
 		const idFile = formData.get(`member${i}ID`);
@@ -143,7 +120,6 @@ async function uploadData(formData) {
 	try {
 		const res = await fetch(workerUrl, { method: 'POST', body: formData });
 		if (res.ok) {
-			// Show success modal
 			showFeedbackModal('Submission successful!', 'Success');
 
 			// Clear the form AFTER modal shows

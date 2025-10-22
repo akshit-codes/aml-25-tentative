@@ -90,7 +90,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		},
 	];
 
-	// Sort lists alphabetically by name
 	coreTeam.sort((a, b) => a.name.localeCompare(b.name));
 	coordinators.sort((a, b) => a.name.localeCompare(b.name));
 

@@ -1,4 +1,3 @@
-// --- Constants ---
 const PARTICLES_DISK_COUNT = 10000;
 const PARTICLES_STAR_COUNT = 10000;
 const ACCRETION_DISK_RADIUS_MIN = 1.5;
@@ -12,8 +11,6 @@ const CAMERA_NEAR = 0.1;
 const CAMERA_FAR = 2000;
 const CAMERA_START_Z = 10;
 const CAMERA_END_Z = 1.2;
-
-// --- THREE.js Scene Setup (Exports) ---
 let scene, camera, renderer;
 let starfield, accretionDisk, blackHole;
 let blackHoleGroup = new THREE.Group();

@@ -1,4 +1,3 @@
-/* New CSS for the Modal */
 .modal {
 	position: fixed;
 	z-index: 1000;
@@ -6,15 +5,8 @@
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(
-		0,
-		0,
-		0,
-		0.85
-	); /* Darker overlay for strong background blur */
-	backdrop-filter: blur(
-		10px
-	); /* Strong blur for the background behind the modal */
+	background-color: rgba(0, 0, 0, 0.85);
+	backdrop-filter: blur(10px);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -29,21 +21,14 @@
 }
 
 .modal-content {
-	background-color: rgba(
-		255,
-		255,
-		255,
-		0.04
-	); /* Glassy transparent white background */
-	backdrop-filter: blur(
-		8px
-	); /* Blur content *behind* the modal-content itself */
-	border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle transparent border */
+	background-color: rgba(255, 255, 255, 0.04);
+	backdrop-filter: blur(8px);
+	border: 1px solid rgba(255, 255, 255, 0.2);
 	border-radius: 15px;
 	padding: 2.5rem;
 	text-align: center;
-	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Soft dark shadow */
-	max-width: 500px; /* Retained wider size */
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+	max-width: 500px;
 	width: 90%;
 	transform: translateY(-50px);
 	transition: transform 0.3s ease;
@@ -58,14 +43,14 @@
 	font-family: var(--font-heading);
 	font-size: 2.2rem;
 	margin-bottom: 1.2rem;
-	text-shadow: 0 0 10px rgba(241, 196, 15, 0.5); /* Added subtle glow to heading */
+	text-shadow: 0 0 10px rgba(241, 196, 15, 0.5);
 }
 
 .modal-content p {
 	font-size: 1.15rem;
 	line-height: 1.7;
 	font-weight: 300;
-	color: white; /* Kept pure white for maximum readability against transparent background */
+	color: white;
 	margin-bottom: 2.5rem;
 }
 

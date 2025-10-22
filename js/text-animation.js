@@ -20,17 +20,16 @@ function startRandomTextAnimation() {
 
 		let step = 0;
 		const maxSteps = textLength * 2;
-		let settling = true; // true = settling, false = unsetting
+		let settling = true;
 		let paused = false;
 
 		const interval = setInterval(() => {
-			if (paused) return; // Skip updates while paused
+			if (paused) return;
 
 			let progress = Math.floor((step / maxSteps) * textLength);
 
 			for (let i = 0; i < textLength; i++) {
 				if (settling) {
-					// Settling from left to right
 					if (i < progress) {
 						textArray[i] = TARGET_TEXT.charAt(i);
 					} else {
@@ -39,7 +38,6 @@ function startRandomTextAnimation() {
 						);
 					}
 				} else {
-					// Unsetting from left to right
 					if (i < progress) {
 						textArray[i] = chars.charAt(
 							Math.floor(Math.random() * chars.length)
@@ -56,14 +54,13 @@ function startRandomTextAnimation() {
 			if (step > maxSteps) {
 				step = 0;
 				if (settling) {
-					// Pause before unsetting
 					paused = true;
 					setTimeout(() => {
 						paused = false;
-						settling = false; // Start unsetting
+						settling = false;
 					}, HOLD_TIME_MS);
 				} else {
-					settling = true; // Restart settling
+					settling = true;
 				}
 			}
 		}, RANDOM_TEXT_FLICKER_INTERVAL_MS);

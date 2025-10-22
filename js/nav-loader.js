@@ -4,8 +4,6 @@ if (!navPlaceholder) {
 } else {
 	const path = window.location.pathname;
 	const pageName = path.split('/').pop();
-
-	// Determine the base path based on the current location
 	const isIndex = pageName === 'index.html' || pageName === '';
 	const basePath = isIndex ? '.' : '..';
 
@@ -13,14 +11,12 @@ if (!navPlaceholder) {
 		{ href: `${basePath}/index.html`, text: 'Home' },
 		{ href: `${basePath}/pages/merch.html`, text: 'Merch' },
 		{ href: `${basePath}/pages/team.html`, text: 'Team' },
+		{ href: `${basePath}/pages/events.html`, text: 'Events' },
 		{
 			href: `${basePath}/pages/boeing-event.html`,
 			text: 'Boeing Aeromodelling',
 		},
-        {
-            href: `${basePath}/pages/auto-expo.html`,
-            text: 'Auto Expo',
-        }
+		{ href: `${basePath}/pages/auto-expo.html`, text: 'Auto Expo' },
 	];
 
 	const navLinksHTML = navLinksArray
@@ -49,7 +45,6 @@ if (!navPlaceholder) {
 
 	navPlaceholder.innerHTML = navHTML;
 
-	// Hamburger menu functionality
 	const hamburger = document.getElementById('hamburger-menu');
 	const navLinks = document.getElementById('navLinks');
 

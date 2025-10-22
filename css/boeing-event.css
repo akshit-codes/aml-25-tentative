@@ -1,22 +1,20 @@
-:root {
-	--color-space-deep: #101820;
-	--color-black-rich: #1a1a1a;
-	--color-accent-gold: #f1c40f;
-	--font-heading: 'Exo', sans-serif;
-	--font-body: 'Lato', sans-serif;
-}
-
 .boeing-event-card {
 	max-width: 1200px;
 	padding: 30px;
 	box-sizing: border-box;
 }
+.boeing-event-card {
+	text-align: center;
+}
+
 .boeing-event-card h2 {
-	font-family: 'Exo', sans-serif;
-	color: #f1c40f;
-	font-size: clamp(2rem, 5vw, 3rem);
-	margin-bottom: 1.5rem;
-	text-shadow: 0 0 10px #f1c40f;
+	font-family: var(--font-heading);
+	font-size: clamp(1.8rem, 5vw, 2.5rem);
+	color: var(--color-accent-gold);
+	margin-bottom: 2rem;
+	padding-bottom: 0.1rem;
+	border-bottom: 2px solid var(--color-accent-gold);
+	display: inline-block;
 }
 .boeing-event-card p {
 	color: #fff;
@@ -32,9 +30,7 @@
 
 .boeing-btn {
 	margin-top: auto;
-	background-color: var(
-		--color-black-rich
-	); /* Changed from purple to black */
+	background-color: var(--color-black-rich);
 	color: var(--color-accent-gold);
 	border: none;
 	padding: 0.75rem 1.25rem;
@@ -49,7 +45,7 @@
 
 .boeing-btn:hover {
 	background-color: var(--color-accent-gold);
-	color: var(--color-black-rich); /* Changed from purple to black */
+	color: var(--color-black-rich);
 	box-shadow: 0 0 20px var(--color-accent-gold);
 }
 .boeing-btn-row {

@@ -1,11 +1,10 @@
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-// --- Main application logic ---
 let threeObjects;
 
 function initStarfieldPage() {
 	const container = document.getElementById('canvas-container');
-	const threeObjects = initThreeScene(container, false); // no black hole
+	const threeObjects = initThreeScene(container, false);
 
 	function animate() {
 		requestAnimationFrame(animate);

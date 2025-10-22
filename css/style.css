@@ -1,18 +1,12 @@
 :root {
-	/* Color Palette: Event Horizon */
-	--color-space-deep: #101820;
+	--color-space-deep: #0a0a0a;
 	--color-black-rich: #1a1a1a;
 	--color-black-light: #2c2c2c;
-
-	/* Color Palette: Stellar Vortex */
 	--color-accent-gold: #f1c40f;
 	--color-accent-gold-glow: #ffdf60;
-
-	/* Color Palette: Nebula Dreams */
 	--color-accent-red: #e74c3c;
 	--color-accent-blue: #3498db;
 	--color-accent-blue-glow: #5dade2;
-
 	--font-heading: 'Exo', sans-serif;
 	--font-body: 'Lato', sans-serif;
 }
@@ -51,8 +45,8 @@ body {
 	z-index: 100;
 	padding: 1rem 2rem;
 	backdrop-filter: blur(10px);
-	background-color: rgba(255, 255, 255, 0.02); /* Kept transparent white */
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Kept transparent white */
+	background-color: rgba(255, 255, 255, 0.02);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 	transition: padding 0.3s ease;
 	height: 65px;
 }
@@ -75,9 +69,7 @@ body {
 }
 
 .nav-link:hover {
-	background-color: var(
-		--color-black-light
-	); /* Changed from purple to light black */
+	background-color: var(--color-black-light);
 	color: var(--color-accent-gold);
 }
 
@@ -92,7 +84,6 @@ main {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	padding: 6rem 1rem;
 	transition: padding 0.3s ease;
 }
 
@@ -109,11 +100,11 @@ main {
 .content-card {
 	max-width: 800px;
 	width: 100%;
-	background-color: rgba(255, 255, 255, 0.04); /* Kept transparent white */
+	background-color: rgba(255, 255, 255, 0.04);
 	backdrop-filter: blur(5px);
 	padding: 2rem;
 	border-radius: 15px;
-	border: 1px solid rgba(255, 255, 255, 0.2); /* Kept transparent white */
+	border: 1px solid rgba(255, 255, 255, 0.2);
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 	transition: padding 0.3s ease;
 	margin: 5vh;
@@ -167,7 +158,7 @@ strong {
 }
 
 blockquote {
-	border-left: 3px solid var(--color-accent-gold); /* Changed from violet to gold */
+	border-left: 3px solid var(--color-accent-gold);
 	padding-left: 1.5rem;
 	margin: 2rem 0;
 	font-style: italic;
@@ -188,12 +179,9 @@ td {
 
 th {
 	font-family: var(--font-heading);
-	background-color: var(
-		--color-black-light
-	); /* Changed from indigo to light black */
+	background-color: var(--color-black-light);
 }
 
-/* --- ADDED FOR RESPONSIVENESS --- */
 @media (max-width: 768px) {
 	.fixed-nav {
 		padding: 1rem;
@@ -227,11 +215,11 @@ th {
 }
 
 .iitgn-logo img {
-    height: 45px;
-    position: absolute;
-    left: 60px;
-    top: 50%;
-    transform: translate(40%, -50%);
+	height: 45px;
+	position: absolute;
+	left: 60px;
+	top: 50%;
+	transform: translate(40%, -50%);
 }
 
 .hamburger {
@@ -254,35 +242,40 @@ th {
 		top: 100%;
 		left: 0;
 		right: 0;
-		background-color: rgba(16, 24, 32, 0.8);
+		background-color: rgba(10, 10, 10, 0.8);
 		backdrop-filter: blur(10px);
-		border-bottom: 1px solid var(--color-accent-blue);
-		box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 		flex-direction: column;
 		align-items: center;
 		gap: 0;
 		max-height: 0;
+		padding: 0;
+		margin: 0;
 		overflow: hidden;
-		transition: max-height 0.5s ease-in-out, border-color 0.5s ease;
+		transition: all 0.3s ease-in-out;
 	}
 
 	.nav-links.open {
-		max-height: 500px; /* Or a height large enough to show all links */
-		padding: 1rem 0;
+		max-height: 500px;
+		padding: 0;
+		margin: 0;
 	}
 
 	.nav-link {
 		width: 100%;
 		text-align: center;
-		padding: 1rem;
+		padding: 0.75rem 1rem;
+		margin: 0;
 		border-radius: 0;
-		border-bottom: 1px solid rgba(52, 152, 219, 0.2);
-		color: var(--color-accent-blue-glow);
+		border: none;
+		border-top: 1px solid rgba(241, 196, 15, 0.2);
+		color: var(--color-accent-gold);
+		box-sizing: border-box;
 	}
 
-	.nav-link:hover {
-		background-color: rgba(52, 152, 219, 0.1);
-		color: white;
+	.nav-link:first-child {
+		border-top: none;
 	}
 
 	.nav-link:last-child {
