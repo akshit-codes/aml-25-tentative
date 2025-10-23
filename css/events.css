@@ -16,7 +16,7 @@ main {
 	justify-content: space-between;
 	gap: 2rem;
 	max-width: 1100px;
-	width: 100%;
+	width: 80%;
 	background-color: rgba(255, 255, 255, 0.04);
 	backdrop-filter: blur(6px);
 	border: 1px solid rgba(255, 255, 255, 0.2);
@@ -129,7 +129,8 @@ main {
 	}
 
 	.event-image-wrapper {
-		max-width: 80%;
+		width: 100%;
+		max-width: none;
 		height: auto;
 		margin: 0 auto 1rem auto;
 		border-radius: 12px;
@@ -137,7 +138,7 @@ main {
 
 	.event-image {
 		width: 100%;
-		max-height: 180px;
+		max-width: none;
 		object-fit: cover;
 		border-radius: 12px;
 	}
@@ -161,7 +162,7 @@ main {
 
 	.event-details {
 		text-align: center;
-		margin: 0.5rem 0 1rem;
+		margin: 0.5rem;
 	}
 
 	.event-details li {
@@ -170,15 +171,20 @@ main {
 	}
 
 	.btn-row {
-		justify-content: center;
-		gap: 0.5rem;
-		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 1rem;
+		flex-wrap: nowrap;
+		width: 100%;
 	}
 
 	.btn {
-		width: 45%;
+		width: auto;
 		min-width: 120px;
+		padding: 0.6rem 1rem;
 		font-size: 0.9rem;
-		padding: 0.5rem 0.75rem;
+	}
+
+	.event-description {
+		display: none;
 	}
 }

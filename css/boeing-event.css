@@ -1,5 +1,6 @@
 .boeing-event-card {
 	max-width: 1200px;
+	width: 80%;
 	padding: 30px;
 	box-sizing: border-box;
 }

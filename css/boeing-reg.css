@@ -1,5 +1,6 @@
 .content-card {
 	max-width: 1200px;
+	width: 80%;
 	text-align: center;
 }
 
@@ -249,7 +250,6 @@
 		margin-bottom: 2rem;
 	}
 
-	/* stack normal fields */
 	#teamForm .form-group {
 		flex-direction: column;
 		align-items: flex-start;
