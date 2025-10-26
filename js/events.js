@@ -21,6 +21,16 @@ events = [
 		rb_link: '../public/brainwiz.pdf',
 		rg_link: 'https://forms.gle/Vth8xcbkdVpCKxdu6',
 	},
+	{
+		name: 'Wire2Win',
+		image: 'w2w',
+		desc: 'Dive into the world of circuits at Wire2Win, Amalthea’s electrifying electrical engineering challenge hosted at IIT Gandhinagar. Test your practical skills as you debug, design, and troubleshoot real electrical setups in a live lab environment. Tackle hands-on problem statements, work under pressure, and showcase your technical finesse as you bring faulty circuits back to life. Whether you’re a circuit enthusiast or just love the buzz of the lab, Wire2Win is your stage to spark innovation and prove your engineering prowess.',
+		venue: 'Electrical Lab',
+		time: '10AM onwards',
+		rb_link: '../public/wire2win.pdf',
+		rg_link:
+			'https://unstop.com/o/gch5Jmd?lb=vfBJXMIX&utm_medium=Share&utm_source=vivekcha24503&utm_campaign=Competitions',
+	},
 ];
 
 function createEventCard(member) {
