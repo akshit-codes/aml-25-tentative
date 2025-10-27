@@ -6,6 +6,7 @@ function init() {
 	const container = document.getElementById('canvas-container');
 	threeObjects = initThreeScene(container);
 	setupScrollAnimations(threeObjects);
+	animateSocialLinks();
 	startRandomTextAnimation();
 	window.addEventListener('resize', onWindowResize);
 	animate();

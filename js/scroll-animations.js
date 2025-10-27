@@ -76,3 +76,29 @@ function setupScrollAnimations(threeObjects) {
 			0
 		);
 }
+
+function animateSocialLinks() {
+	const socialLinks = document.querySelector('.social-links');
+	ScrollTrigger.create({
+		start: '1px top',
+		end: 'bottom top',
+		onEnter: () => {
+			gsap.to(socialLinks, {
+				opacity: 0,
+				y: 50,
+				duration: 0.2,
+				pointerEvents: 'none',
+				ease: 'power1.out',
+			});
+		},
+		onLeaveBack: () => {
+			gsap.to(socialLinks, {
+				opacity: 1,
+				y: 0,
+				duration: 0.2,
+				pointerEvents: 'auto',
+				ease: 'power1.out',
+			});
+		},
+	});
+}

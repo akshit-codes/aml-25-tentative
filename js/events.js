@@ -31,6 +31,16 @@ events = [
 		rg_link:
 			'https://unstop.com/o/gch5Jmd?lb=vfBJXMIX&utm_medium=Share&utm_source=vivekcha24503&utm_campaign=Competitions',
 	},
+	{
+		name: 'Boeing Aeromodelling',
+		image: 'boeing',
+		desc: 'Are you ready to take your passion for flight to the next level? The Boeing Aeromodelling Competition at Amalthea 2025, IIT Gandhinagar, is your opportunity to design, build, and fly your own remote-controlled aircraft. Compete with the brightest minds from across the country, showcase your innovation, and experience the thrill of aviation engineering in action. Whether you’re a seasoned builder or a first-time flyer, this competition is the perfect platform to learn, network, and win amazing prizes. Meet industry experts, connect with fellow enthusiasts, and make memories at one of India’s most exciting tech summits. Don’t just dream of flying - make it real at Amalthea 2025!',
+		venue: 'IIT Gandhinagar',
+		time: '10AM onwards',
+		rb_link: '../public/boeing.pdf',
+		rg_link:
+			'https://unstop.com/o/nIZuSV8?lb=mtewJhc&utm_medium=Share&utm_source=amaltgan2430&utm_campaign=Competitions',
+	},
 ];
 
 function createEventCard(member) {

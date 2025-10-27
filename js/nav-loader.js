@@ -12,10 +12,11 @@ if (!navPlaceholder) {
 		{ href: `${basePath}/pages/merch.html`, text: 'Merch' },
 		{ href: `${basePath}/pages/team.html`, text: 'Team' },
 		{ href: `${basePath}/pages/events.html`, text: 'Events' },
-		{
-			href: `${basePath}/pages/boeing-event.html`,
-			text: 'Boeing Aeromodelling',
-		},
+		// {
+		// 	href: `${basePath}/pages/boeing-event.html`,
+		// 	text: 'Boeing Aeromodelling',
+		// },
+		{ href: 'https://amalthea-2025.vercel.app/', text: 'Tech Expo' },
 		{ href: `${basePath}/pages/auto-expo.html`, text: 'Auto Expo' },
 	];
 
