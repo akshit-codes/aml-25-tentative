@@ -16,7 +16,7 @@ if (!navPlaceholder) {
 		// 	href: `${basePath}/pages/boeing-event.html`,
 		// 	text: 'Boeing Aeromodelling',
 		// },
-		{ href: 'https://amalthea-2025.vercel.app/', text: 'Tech Expo' },
+		{ href: `${basePath}/pages/tech-expo.html`, text: 'Tech Expo' },
 		{ href: `${basePath}/pages/auto-expo.html`, text: 'Auto Expo' },
 	];
 
