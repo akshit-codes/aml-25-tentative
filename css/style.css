@@ -111,7 +111,7 @@ main {
 }
 
 .scroll-section {
-	min-height: 100vh;
+	min-height: 100dvh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -140,7 +140,7 @@ main {
 	border: 1px solid rgba(255, 255, 255, 0.2);
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 	transition: padding 0.3s ease;
-	margin: 5vh;
+	margin: 5dvh;
 }
 
 #landing h1 {
@@ -228,7 +228,7 @@ th {
 
 .social-links {
 	position: absolute;
-	bottom: 2vh;
+	bottom: 2dvh;
 	display: flex;
 	gap: 1.5rem;
 	z-index: 20;
@@ -324,7 +324,7 @@ th {
 	}
 
 	.social-links {
-		bottom: 8vh;
+		bottom: 8dvh;
 		gap: 1rem;
 	}
 

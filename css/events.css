@@ -2,12 +2,12 @@ main {
 	scroll-snap-type: y proximity;
 	overflow-y: scroll;
 	scroll-behavior: smooth;
-	height: 100vh;
+	height: 100dvh;
 }
 
 .scroll-section {
 	scroll-snap-align: start;
-	min-height: 100vh;
+	min-height: 100dvh;
 }
 
 .event-card {

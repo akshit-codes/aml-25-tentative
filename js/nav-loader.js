@@ -26,7 +26,7 @@ if (!navPlaceholder) {
 		)
 		.join('');
 
-	const navHTML = `
+	const navhTML = `
     <header class="fixed-nav">
 		<a href="${basePath}/index.html" class="nav-logo"><img src="${basePath}/images/aml_logo.png" alt="Amalthea Logo"
 				class="aml-logo-img" /></a>
@@ -44,7 +44,7 @@ if (!navPlaceholder) {
 	</header>
     `;
 
-	navPlaceholder.innerHTML = navHTML;
+	navPlaceholder.innerHTML = navhTML;
 
 	const hamburger = document.getElementById('hamburger-menu');
 	const navLinks = document.getElementById('navLinks');
