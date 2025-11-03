@@ -74,11 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			image: 'people/Siya.png',
 		},
 		{
-			name: 'Vikram Aditya',
-			role: 'CNS Coordinator',
-			image: 'people/Vikram.png',
-		},
-		{
 			name: 'Vinay Kumar',
 			role: 'Events Coordinator',
 			image: 'people/Vinay.png',
