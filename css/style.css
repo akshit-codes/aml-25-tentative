@@ -257,6 +257,10 @@ th {
 	bottom: 0;
 }
 
+.extra-blur {
+	backdrop-filter: blur(15px);
+}
+
 @media (max-width: 768px) {
 	.fixed-nav {
 		padding: 1rem;

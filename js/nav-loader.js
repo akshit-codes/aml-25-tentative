@@ -8,7 +8,7 @@ if (!navPlaceholder) {
 	const basePath = isIndex ? '.' : '..';
 
 	const navLinksArray = [
-		{ href: `${basePath}/index.html`, text: 'Home' },
+		{ href: `${basePath}/`, text: 'Home' },
 		{ href: `${basePath}/pages/merch.html`, text: 'Merch' },
 		{ href: `${basePath}/pages/team.html`, text: 'Team' },
 		{ href: `${basePath}/pages/events.html`, text: 'Events' },

@@ -125,6 +125,17 @@ const events = {
 		rb_link: 'https://itch.io/jam/game-jam-2025-ad',
 		rg_link: 'https://itch.io/jam/game-jam-2025-ad',
 	},
+	odoo: {
+		name: 'Odoo x Amalthea',
+		image: 'odoo',
+		desc: 'Join the Odoo x Amalthea Hackathon, a 24-hour coding marathon where talent meets technology! This multi-stage challenge begins with an 8-hour virtual round on a surprise problem statement. Top teams advance to the offline final to craft groundbreaking solutions to real-world problems. Compete for a prize pool of over ₹105,000, Odoo goodies, and a chance at a CTC of up to 8 LPA for exceptional performers.',
+		venue: 'AB10/103, AB10/201, AB10/202',
+		time: '48-Hour Event',
+		rb_link:
+			'https://www.odoo.com/event/odoo-x-amalthea-iit-gn-hackathon-2025-8850/register',
+		rg_link:
+			'https://www.odoo.com/event/odoo-x-amalthea-iit-gn-hackathon-2025-8850/register',
+	},
 };
 
 const eventsList = [
@@ -132,6 +143,7 @@ const eventsList = [
 	events.drift,
 	events.cubing,
 	events.bushido,
+	events.odoo,
 	events.brainwiz,
 	events.wire2win,
 	events.rereact,
