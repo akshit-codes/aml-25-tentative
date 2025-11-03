@@ -15,11 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			role: 'Tech Expo and Marketing Core',
 			image: 'people/Jils.png',
 		},
-		{
-			name: 'Kunal Chandola',
-			role: 'Sponsorship and CNS Core',
-			image: 'people/Kunal.png',
-		},
 	];
 
 	const coordinators = [
