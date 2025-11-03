@@ -9,6 +9,7 @@
 	--color-accent-blue-glow: #5dade2;
 	--font-heading: 'Exo', sans-serif;
 	--font-body: 'Lato', sans-serif;
+	--nav-height: 65px;
 }
 
 * {
@@ -49,7 +50,7 @@ body {
 	background-color: rgba(255, 255, 255, 0.02);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 	transition: padding 0.3s ease;
-	height: 65px;
+	height: var(--nav-height);
 }
 
 .nav-links {
@@ -133,7 +134,7 @@ main {
 	max-width: 800px;
 	width: 100%;
 	background-color: rgba(255, 255, 255, 0.04);
-	backdrop-filter: blur(5px);
+	backdrop-filter: blur(3px);
 	padding: 2rem;
 	border-radius: 15px;
 	border: 1px solid rgba(255, 255, 255, 0.2);
@@ -242,6 +243,18 @@ th {
 .social-links a:hover {
 	color: var(--color-accent-gold-glow);
 	transform: scale(1.2);
+}
+
+.center-container {
+	height: calc(100% - var(--nav-height));
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	transition: padding 0.3s ease;
+	position: absolute;
+	bottom: 0;
 }
 
 @media (max-width: 768px) {
