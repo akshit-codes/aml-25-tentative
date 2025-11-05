@@ -9,6 +9,7 @@ if (!navPlaceholder) {
 
 	const navLinksArray = [
 		{ href: `${basePath}/`, text: 'Home' },
+		{ href: `${basePath}/pages/concert.html`, text: 'Concert' },
 		{ href: `${basePath}/pages/merch.html`, text: 'Merch' },
 		{ href: `${basePath}/pages/team.html`, text: 'Team' },
 		{ href: `${basePath}/pages/events.html`, text: 'Events' },
