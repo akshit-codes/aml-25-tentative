@@ -172,8 +172,7 @@ main {
 	}
 
 	.btn-row {
-		justify-content: space-between;
-		gap: 1rem;
+		gap: 1.2rem;
 		flex-wrap: nowrap;
 		width: 100%;
 	}
